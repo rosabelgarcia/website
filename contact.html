@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rosabel Garcia</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> <!-- Google Fonts Link for Montserrat -->
+</head>
+<body>
+    <h1 id="name">
+        <img src="img/logo.png" style="width:50px;height:50px;margin-right:10px;margin-bottom:-15px;"/><a href="index.html" style="text-decoration: none; color: inherit;">ROSABEL GARCIA</a></h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li>
+                <a href="#performance">PERFORMANCE</a>
+                <div class="dropdown"> <!-- Dropdown menu -->
+                    <a href="choreo.html">CHOREOGRAPHY</a>
+                    <a href="w.htmlorks">APPEARANCES</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li> <!-- Corrected link -->
+        </ul>
+    </nav>
+    <main>
+        <section id="contact-section">
+            <h2>Contact Me</h2>
+            <p>If you have any questions, feel free to reach out. I'd love to hear from you!</p>
+    
+            <!-- Contact Form -->
+            <form action="submit_contact_form.php" method="post" class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+    
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Direct Contact:</h3>
+                <p>Email: <a href="mailto:rosabelg.rg@gmail.com">rosabelg.rg@gmail.com</a></p>
+                <p>Phone: <a href="tel:+17862632700">+1 (786) 263-2700</a></p>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <h3>Follow Me</h3>
+                <a href="https://www.instagram.com/rosabelgdance/" target="_blank" aria-label="Instagram">
+                    <img src="img/ig.webp" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/rosabel-garcia-613984200/" target="_blank" aria-label="LinkedIn">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>

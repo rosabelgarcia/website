@@ -1,0 +1,163 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F9F6EE;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+#name {
+    color: #800000;
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+/* Navbar styles */
+nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    margin-left: 70px;
+    font-size: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: brown;
+    text-decoration: none;
+    font-weight: 400;
+    transition: text-decoration 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    color: white;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+
+/* Main content */
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Section styles */
+section {
+    padding: 50px 0;
+}
+
+#title {
+    color: #800000;
+}
+
+#statement {
+    text-align: left;
+}
+
+
+/* Contact Page Styles */
+#contact-section {
+    text-align: center;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Contact Info */
+.contact-info {
+    margin: 30px 0;
+}
+
+.contact-info p a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info p a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Links */
+.social-media {
+    margin: 30px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+}

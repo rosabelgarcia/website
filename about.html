@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rosabel Garcia</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> <!-- Google Fonts Link for Montserrat -->
+
+</head>
+<body>
+    <h1 id="name">
+        <img src="img/logo.png" style="width:50px;height:50px;margin-right:10px;margin-bottom:-15px;"/><a href="index.html" style="text-decoration: none; color: inherit;">ROSABEL GARCIA</a></h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li>
+                <a href="#performance">PERFORMANCE</a>
+                <div class="dropdown"> <!-- Dropdown menu -->
+                    <a href="choreo.html">CHOREOGRAPHY</a>
+                    <a href="works.html">APPEARANCES</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img src="img/main_bw.jpg" style="width:400px;margin-left:-700px;margin-top:70px;"> 
+        <p id="bio" style="width:600px; margin-left:550px; margin-bottom:0px; margin-top:-290px;">Rosabel Garcia (She/Her) is a native of Cuba. She has always had a passion for dance and is constantly searching for ways to share her artistic talent with other individuals, both dancers and non-dancers. Rosabel moved to Miami, Florida at the age of 5, and trained in distinct styles such as ballet, modern, contemporary, jazz, hip-hop, and ballroom. She continued to train at Miami Arts Charter School with instructors Diana Ford, Theodore Talbot, Valerie Barreiro, and Hannah Baumgarten. She has attended numerous summer intensives including Joffrey Ballet Miami and Ruth Page International Dance Experience. 
+            She graduates from the University of South Florida in 2025 with a Bachelor of Fine Arts in Ballet and Dance Medicine and Science Certificate. During her years in college, she had the privilege to work with guest choreographers Kate Weare and Kelly King, as well as performing in faculty works. She also worked with companies Cuban Classical Ballet, Dance NOW! Miami, and Tampa City Ballet. Rosabel had the opportunity to participate in the USF Dance Paris Abroad Program in the Summer of 2024, presenting her to national artists. She demonstrates her leadership abilities through her role as Vice President of Student Dance Productions.</p>
+        <p style="margin-left:-440px;margin-bottom:100px;margin-top:-40px;font-size:10px;">Photo by: avyproductions</p>
+        
+        <!-- Card Container -->
+        <div class="card-container">
+            <div class="card" onclick="openPDF('Resume.pdf')">
+                <h3>Resume</h3>
+                <p>Click to preview the resume.</p>
+            </div>
+            <div class="card" onclick="openPDF('CV.pdf')">
+                <h3>CV</h3>
+                <p>Click to preview the CV.</p>
+            </div>
+        </div>
+        <script>
+            function openPDF(pdfUrl) {
+                window.open(pdfUrl, '_blank'); // Open the PDF in a new tab
+            }
+        </script>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:rosabelg.rg@gmail.com">rosabelg.rg@gmail.com</a></p>
+            <p>Phone: <a href="tel:+17862632700">+1 (786) 263-2700</a></p>
+            
+            <div class="social-media">
+                <a href="https://www.instagram.com/rosabelgdance/" target="_blank" aria-label="Instagram">
+                    <img src="img/ig.webp" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/rosabel-garcia-613984200/" target="_blank" aria-label="LinkedIn">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rosabel Garcia. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>

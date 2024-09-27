@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: 	#F9F6EE;
+  }
+  
+  #name{
+    color:#800000;
+    margin-left:30px;
+    font-size: 25px;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Montserrat', serif;
+}
+
+/* Navbar styles */
+nav {
+    padding: 1rem; /* Padding around the navbar */
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    margin-top:-70px;
+    margin-left:70px;
+    font-size:15px;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Align items in a row */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space xbetween nav items */
+}
+
+nav a {
+    color: brown; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 400; /* Normal weight */
+    transition: text-decoration 0.3s; /* Smooth transition */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.dropdown {
+    display: none; /* Hide the dropdown by default */
+    position: absolute; /* Position relative to parent */
+    background-color: #444; /* Dark background for dropdown */
+    padding: 0.5rem; /* Padding around dropdown */
+    z-index: 1; /* Ensure dropdown is above other elements */
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown a {
+    display: block; /* Block display for links in dropdown */
+    color: white; /* Text color for dropdown links */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Padding for dropdown links */
+    font-size:10px;
+}
+
+.dropdown a:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+/* Main styles */
+main {
+    text-align: center; /* Center text in main */
+    padding: 2rem; /* Padding around main content */
+}
+
+footer {
+    background-color: #333; /* Footer background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center align text */
+}
+
+.footer-content {
+    margin-bottom: 20px; /* Space below footer content */
+}
+
+.footer-content h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.footer-content a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-media {
+    margin-top: 10px; /* Space above social media icons */
+}
+
+.social-media a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.social-media img {
+    width: 24px; /* Size of the icons */
+    height: 24px; /* Size of the icons */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Space above footer bottom */
+}
+/* Gallery layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 200px;
+    grid-gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s, box-shadow 0.4s ease;
+    grid-column: span 1;
+    grid-row: span 1;
+    cursor: pointer;
+}
+
+.gallery img.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery img.medium {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Fullscreen modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* Close button for modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #bbb;
+}
